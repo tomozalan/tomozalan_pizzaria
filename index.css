@@ -1,49 +1,45 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ 
+body {
+    background-color: #222222;
     color: white;
 }
-header{
+header {
     width: 100%;
-    z-index: 10;
+    padding: 25px 50px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
 }
-
-.navbar ul{
-    list-style-type: none;
-    padding: 0px;
-    margin-right: 10px;
-    overflow: hidden;
+ 
+nav{
+    box-sizing: border-box;
 }
-.navbar a{
-    color: rgba(255, 255, 255, 0.726);
+.logo {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+ 
+header nav a {
+    margin-left: 25px;
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 14px;
     text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
 }
-.navbar a:hover{
+nav a:hover{
     color: white;
 }
-.navbar li{
-    float: right;
-}
-.navbar span{
-    color: rgba(255, 255, 255, 0.726);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
-header .logo{
-    font-size: 22px;
-    text-align: left;
-}
-.current{
-    color: white;
+nav .per:hover{
+    color: rgba(255, 255, 255, 0.719);
 }
 .fejlec img{
     width: 100%;
@@ -51,3 +47,33 @@ header .logo{
     object-fit: cover;
     display: block;
 }
+#aktiv{
+    color: white;
+}
+.PIADINACONTAINER{
+    display: grid;
+    grid-template-areas:
+      "HISTORY PHONE";
+    grid-template-columns: 2fr 3fr;
+    gap: 3px;
+    padding: 5px;
+    width: 100%;
+}
+.PIADINACONTAINER div {
+    padding: 10px;
+  }
+.PIADINACONTAINER div.tortenelmunk {
+    grid-area: HISTORY;
+    text-align: right;
+    background: #313131;
+    height: 40vh;
+  }
+.PIADINACONTAINER div.foglaljasztalt {
+    grid-area: PHONE;
+    background: #4e4e4e;
+  }
+  .PIADINACONTAINER h1{
+    margin-top: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
