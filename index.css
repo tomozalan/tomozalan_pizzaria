@@ -34,6 +34,7 @@ header nav a {
     color: rgba(255, 255, 255, 0.719);
     font-size: 14px;
     text-decoration: none;
+    transition: 0.3s;
 }
 nav a:hover{
     color: white;
@@ -50,30 +51,104 @@ nav .per:hover{
 #aktiv{
     color: white;
 }
-.PIADINACONTAINER{
+.piadinacontainer{
     display: grid;
     grid-template-areas:
       "HISTORY PHONE";
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 5fr 7fr;
     gap: 3px;
     padding: 5px;
     width: 100%;
 }
-.PIADINACONTAINER div {
+.piadinacontainer div {
     padding: 10px;
   }
-.PIADINACONTAINER div.tortenelmunk {
+.piadinacontainer div.tortenelmunk {
     grid-area: HISTORY;
     text-align: right;
-    background: #313131;
+    background: #222;
     height: 40vh;
   }
-.PIADINACONTAINER div.foglaljasztalt {
+.piadinacontainer div.foglaljasztalt {
     grid-area: PHONE;
-    background: #4e4e4e;
+    background: #222;
+    width: 82%;
   }
-  .PIADINACONTAINER h1{
-    margin-top: 10vh;
+  .piadinacontainer h1{
+    margin-top: 7vh;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
+  .tnr{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    color: rgb(173, 173, 173);
+    padding-top: 8px;
+  }
+  .foglaljasztalt{
+    margin-top: 7vh;
+    font-size: large;
+    line-height: 30px;
+    color: rgb(173, 173, 173);
+    margin-bottom: 70px;
+  }
+  .foglaljasztalt h2{
+
+    color: white;
+    margin-top: 35px;
+    font-size: larger;
+  }
+  .menu{
+    background-color: #101010;
+  }
+    .menu-section {
+        background-color: #101010;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+     
+    .menu-section h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+     
+    .menu-section h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #ccc;
+    }
+     
+    .menu-section p {
+        max-width: 700px;
+        margin: 0 auto 40px;
+        line-height: 1.6;
+        color: #ddd;
+    }
+     
+    .menu-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+     
+    .menu-btn {
+        border: 1px solid white;
+        padding: 20px 70px;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+     
+    .menu-btn:hover {
+        background-color: #464512;
+        color: rgb(245, 250, 174);
+        border-color: rgb(245, 250, 174)
+    }
+    .menu p{
+
+    }
+
