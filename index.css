@@ -155,7 +155,7 @@ nav .per:hover{
         align-items: center;
         height: auto;
         background-color:#222222;
-        margin-bottom: 300px ;
+        margin-bottom: 300px ;  
     }
     .specialitasaink h3{
         font-size: 28px;
@@ -169,20 +169,25 @@ nav .per:hover{
         font-size: 20px;
     }
     .container {
+        margin-top: 40px;
         display: grid;
         grid-template-areas:
           "pizza1 pizza1 voros"
           "gomba pizza2 voros"
           "gomba pizza2 elo"
           "blank blank elo";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr 0.1fr;
+        grid-template-columns: 10fr 10fr 10fr;
+        grid-template-rows: 20fr 5fr 10fr 1fr;
         gap: 35px;
         padding: 5px;
         height: 800px;
       }
       .container div {
         padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
       }
       .container div.pizza1 {
         grid-area: pizza1;
@@ -196,6 +201,7 @@ nav .per:hover{
         grid-area: pizza2;
         background-image: url(/img/pizzakep4.jpg);
         background-size: cover;
+        
         
       }
       .container div.voros {
@@ -212,10 +218,18 @@ nav .per:hover{
         background-image: url(/img/pizzakep5.jpg);
         background-size: cover;
         background-position: 65%;
+        height: 200px;
       }
       .container div.gomba {
         grid-area: gomba; 
         background-image: url(/img/pizzakep3.jpg);
         background-size: cover;
         background-position: 65%;
+      }
+      .container .tnr{
+        color: white;
+        font-size: medium;
+      }
+      .container div.blank :hover{
+        background-color: rgba(255, 255, 0, 0.644);
       }
