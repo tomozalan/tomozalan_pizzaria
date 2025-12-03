@@ -70,7 +70,7 @@ nav .per:hover{
     display: grid;
     grid-template-areas:
       "HISTORY PHONE";
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 3fr 7fr;
     gap: 3px;
     padding: 5px;
     width: 100%;
@@ -170,7 +170,6 @@ nav .per:hover{
         align-items: center;
         height: auto;
         background-color:#222222;
-        margin-bottom: 300px ;  
     }
     .specialitasaink h3{
         font-size: 28px;
@@ -196,6 +195,7 @@ nav .per:hover{
         gap: 35px;
         padding: 5px;
         height: 800px;
+        width: 900px;
       }
       .container div {
         position: relative;
@@ -223,8 +223,6 @@ nav .per:hover{
     }
       .container div.pizza1 {
         grid-area: pizza1;
-        height: 50vh;
-        width: 80vh;
         background-image: url(/img/pizzakep.jpg);
         background-size: cover;
         
@@ -274,7 +272,7 @@ nav .per:hover{
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(192, 192, 0, 0.507); /* sárga áttetsző */
+        background: rgba(172, 172, 1, 0.507);
         opacity: 0;
         transition: 0.3s;
     }
@@ -285,3 +283,62 @@ nav .per:hover{
     .container div.blank::after {
         display: none;
     }
+
+    .footercontainer {
+      display: flex;
+      justify-content: center;
+      padding: 80px 120px;
+      margin: auto;
+      gap: 20px;
+      background-color: #101010;
+  }
+   
+  .right, .center, .left {
+      width: 70%;
+      text-align: left;  
+  }
+   
+   
+  .left h2, .center h3, .right h3 {
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+  }
+  .left{
+    text-align: right;
+   }
+   .nyitvatartas {
+    background-color: #101010;
+
+}
+  .nyitvatartas p {
+      margin: 0;
+      padding: 12px 0;
+      border-bottom: 1px solid #444;  /* <<< pont mint a képen */
+      font-size: 15px;
+      line-height: 1.4;
+
+  }
+   
+   
+  .nyitvatartas p:last-child {
+      border-bottom: none;
+  }
+   
+   
+  .gmb2 {
+      display: inline-block;
+      color: #fff;
+      text-decoration: underline;
+      margin-top: 20px;
+  }
+   
+  footer {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      font-size: 12px;
+      background-color: #101010 ;
+      padding: 40px 0;
+      margin-top: 60px;
+      border-top: 1px solid #5e5e5e;  
+  }
