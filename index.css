@@ -366,7 +366,7 @@ nav .per:hover{
 
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     .container {
       margin-top: 40px;
       display: grid;
@@ -410,5 +410,70 @@ header nav a {
 nav .per {
   display: none;
 }
+  }
+  @media (max-width: 450px) {
+
+    .container {
+        margin-top: 40px;
+        display: grid;
+        align-content: center;
+        grid-template-areas:
+          "pizza1"
+          "gomba"
+          "pizza2"
+          "voros"
+          "elo"
+          "blank";
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px;
+        height: 2000px;
+        width: 100%;
+        justify-content: center;
+      }
+      .container div.pizza1 {
+        grid-area: pizza1;
+        background-image: url(/img/pizzakep.jpg);
+        background-size: cover;
+        height: 250px;
+      }
+      .container div.pizza2 {
+        grid-area: pizza2;
+        background-image: url(/img/pizzakep4.jpg);
+        background-size: cover;
+        background-size: 100%;
+        height: 370px;
+        
+      }
+      .container div.voros {
+        grid-area: voros; 
+        background-image: url(/img/pizzakep2.jpg);
+        background-size:cover;
+        background-size: 250%;
+        height: 700px;
+      }
+      .container div.blank {
+        grid-area: blank; 
+      }
+      .container div.blank::before {
+        display: none;
+    }
+      .container div.elo {
+        grid-area: elo; 
+        background-image: url(/img/pizzakep5.jpg);
+        background-size: cover;
+        background-position: 65%;
+        background-size: 110%;
+        height: 300px;
+      }
+      .container div.gomba {
+        grid-area: gomba; 
+        background-image: url(/img/pizzakep3.jpg);
+        background-size: cover;
+        background-position: 60%;
+        background-size: 130%;
+        height: 320px;
+      }
+
   }
   
