@@ -429,7 +429,7 @@ nav .per {
         gap: 20px;
         padding: 5px;
         height: 2000px;
-        width: 100%;
+        width: 90%;
         justify-content: center;
       }
       .container div.pizza1 {
@@ -479,7 +479,7 @@ nav .per {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 80px 120px;
+        padding: 10px;
         margin: auto;
         gap: 50px;
         background-color: #101010;
@@ -491,15 +491,51 @@ nav .per {
     }
     .right{
       line-height: 30px;
-      text-align: right;
+      text-align: left;
     }
     .left{
       text-align: right;
+      display: flex;
+      gap: 10px;
+      flex-direction: row ;
+      align-items: end;
+      justify-content: end;
      }
      
     .left h2, .center h3, .right h3 {
         margin-bottom: 20px;
         letter-spacing: 1px;
     }
+    footer {
+      margin: auto;
+      width: 60%;
+      text-align: center;
+      font-size: 12px;
+      background-color: #101010 ;
+      padding: 20px 0;
+      row-gap: 30px;
+      margin-top: 10px;
+      border-top: 1px solid #5e5e5e;  
+      color: rgb(173, 173, 173);
+      }
+      .piadinacontainer{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .piadinacontainer div.tortenelmunk {
+      grid-area: HISTORY;
+      text-align: right;
+      background: #222;
+      height: 10vh;
+    }
+    .piadinacontainer div.foglaljasztalt {
+      grid-area: PHONE;
+      background: #222;
+      width: 100%;
   }
-  
+}
