@@ -364,9 +364,6 @@ nav .per:hover{
     display: flex;
   }
 
-
-
-
   @media (max-width: 1000px) {
     .container {
       margin-top: 40px;
@@ -414,6 +411,27 @@ nav .per {
   }
   @media (max-width: 450px) {
 
+    header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      margin: 0px;
+      padding-left: 10px;
+    }
+    .fejlec{
+      background-size: cover;
+    }
+    .logo {
+      font-size: 20px;
+      text-align: left;
+      padding-left: 0px;
+      letter-spacing: 2px;
+  }
     .container {
         margin-top: 40px;
         display: grid;
@@ -428,9 +446,12 @@ nav .per {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 5px;
-        height: 2000px;
+        height: 1800px;
         width: 90%;
         justify-content: center;
+      }
+      .specialitasaink .szoveg{
+        padding-top: 25px;
       }
       .container div.pizza1 {
         grid-area: pizza1;
@@ -443,7 +464,7 @@ nav .per {
         background-image: url(/img/pizzakep4.jpg);
         background-size: cover;
         background-size: 100%;
-        height: 370px;
+        height: 300px;
         
       }
       .container div.voros {
@@ -451,7 +472,7 @@ nav .per {
         background-image: url(/img/pizzakep2.jpg);
         background-size:cover;
         background-size: 250%;
-        height: 700px;
+        height: 550px;
       }
       .container div.blank {
         grid-area: blank; 
@@ -473,7 +494,7 @@ nav .per {
         background-size: cover;
         background-position: 60%;
         background-size: 130%;
-        height: 320px;
+        height: 300px;
       }
       .footercontainer {
         display: flex;
@@ -481,7 +502,7 @@ nav .per {
         justify-content: center;
         padding: 10px;
         margin: auto;
-        gap: 50px;
+        gap: 20px;
         background-color: #101010;
     }
      
@@ -491,6 +512,16 @@ nav .per {
     }
     .right{
       line-height: 30px;
+      text-align: left;
+      font-size: large;
+      color: rgb(173, 173, 173);
+    }
+    .right h3{
+      color: white;
+      font-size: 17px;
+      display: flex;
+      justify-content: left;
+      gap: 5px;
       text-align: left;
     }
     .left{
@@ -518,10 +549,13 @@ nav .per {
       border-top: 1px solid #5e5e5e;  
       color: rgb(173, 173, 173);
       }
+      .piadina{
+        height: 720px;
+      }
       .piadinacontainer{
         display: flex;
         flex-direction: column;
-        text-align: justify;
+        text-align: left;
         padding: 5px;
         width: 100%;
         margin: auto;
@@ -537,5 +571,8 @@ nav .per {
       grid-area: PHONE;
       background: #222;
       width: 100%;
+  }
+  .fejlec img{
+    height: 500px
   }
 }
