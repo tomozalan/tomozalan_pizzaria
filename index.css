@@ -340,16 +340,19 @@ nav .per:hover{
       margin-top: 20px;
   }
    
-  footer {
+  footer{
       margin: auto;
       width: 60%;
       text-align: center;
-      font-size: 12px;
+      font-size: 15px;
       background-color: #101010 ;
-      padding: 40px 0;
+      padding: 60px 0;
       margin-top: 60px;
       border-top: 1px solid #5e5e5e;  
       color: rgb(173, 173, 173);
+      }
+      .footer p{
+        font-size: 10px;
       }
     #menu-toggle {
         display: none;
@@ -364,6 +367,9 @@ nav .per:hover{
     display: flex;
   }
 
+  .piadina .tnr{
+    font-size: larger;
+  }
   @media (max-width: 1000px) {
     .container {
       margin-top: 40px;
@@ -539,12 +545,12 @@ nav .per {
     }
     footer {
       margin: auto;
-      width: 60%;
+      width: 90%;
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       background-color: #101010 ;
       padding: 20px 0;
-      row-gap: 30px;
+      row-gap: 50px;
       margin-top: 10px;
       border-top: 1px solid #5e5e5e;  
       color: rgb(173, 173, 173);
@@ -572,7 +578,14 @@ nav .per {
       background: #222;
       width: 100%;
   }
-  .fejlec img{
-    height: 500px
+  .fejlec {
+    position: relative;
+    overflow: hidden; /* ensures no overflow */
+  }
+  .fejlec img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    transform: scale(5);
   }
 }
