@@ -370,7 +370,7 @@ nav .per:hover{
   .piadina .tnr{
     font-size: larger;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .container {
       margin-top: 40px;
       display: grid;
@@ -389,6 +389,9 @@ nav .per:hover{
     .hamburger {
       display: block;
       z-index: 20;
+    .piadinacontainer{
+      width: 100%;
+    }
   }
   header nav {
     position: absolute;
@@ -415,7 +418,7 @@ nav .per {
   display: none;
 }
   }
-  @media (max-width: 450px) {
+  @media (max-width: 750px) {
 
     header {
       width: 100%;
@@ -580,7 +583,7 @@ nav .per {
   }
   .fejlec {
     position: relative;
-    overflow: hidden; /* ensures no overflow */
+    overflow: hidden;
   }
   .fejlec img {
     width: 100%;
