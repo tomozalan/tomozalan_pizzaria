@@ -5,7 +5,9 @@
     font-family: Arial, sans-serif;
     
 }
- 
+#elerhetoseg a{
+  color: rgb(173, 173, 173)
+}
 body {
     background-color: #101010;
     color: white;
@@ -342,7 +344,7 @@ nav .per:hover{
    
   footer{
       margin: auto;
-      width: 60%;
+      width: 70%;
       text-align: center;
       font-size: 15px;
       background-color: #101010 ;
@@ -558,6 +560,7 @@ nav .per {
       border-top: 1px solid #5e5e5e;  
       color: rgb(173, 173, 173);
       }
+
       .piadina{
         height: 720px;
       }
